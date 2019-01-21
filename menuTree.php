@@ -14,7 +14,7 @@ function menuTree($arr_data,$id='id',$pid='pid',$top=0)
         }
 
         foreach ($arr_data as $key=>$data){
-            if ($data[$pid]==$top){
+            if ($data[$pid]===$top){
                 $tree[] = &$arr_data[$key];
             }
             if (isset($key_arr[$data[$pid]])){
